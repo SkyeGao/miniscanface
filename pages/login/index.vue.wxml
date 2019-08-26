@@ -1,0 +1,26 @@
+<template name="176de672">
+  <view class="_div data-v-6225bdcb wrapper">
+    <view class="_p data-v-6225bdcb">
+      <image src="/static/images/mark-fill.png" alt="name" class="_img data-v-6225bdcb"></image> 住址 <label class="_span data-v-6225bdcb red">*</label>
+    </view>
+    <view class="_div data-v-6225bdcb boxinput"><input type="text" value="{{ADDRESS}}" bindinput="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_input data-v-6225bdcb" /></view>
+    <scroll-view scroll-y="true" class="_scroll-view data-v-6225bdcb scrollview" hidden="{{hideScroll}}" style=" {{arrayHeight > 340 ? 'height:340rpx' : ''}}">
+      <view wx:key="index" key="{{index}}" wx:for="{{bindSource}}" wx:for-index="index" wx:for-item="item" class="_view data-v-6225bdcb">
+        <view id="{{item.ID}}" data-name="{{item.ADDRESS}}" bindtap="handleProxy" class="_view data-v-6225bdcb itemview" hover-class="itemhover" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}">{{item.ADDRESS}}</view>
+      </view>
+    </scroll-view>
+    <view class="_p data-v-6225bdcb">
+      <image src="/static/images/user.png" alt="name" class="_img data-v-6225bdcb"></image> 业主姓名 <label class="_span data-v-6225bdcb red">*</label>
+    </view>
+    <view class="_div data-v-6225bdcb boxinput"><input type="text" value="{{NAME}}" bindinput="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_input data-v-6225bdcb" /></view>
+    <view class="_p data-v-6225bdcb">
+      <image src="/static/images/mobile.png" alt="name" class="_img data-v-6225bdcb"></image> 手机号 <label class="_span data-v-6225bdcb red">*</label>
+    </view>
+    <view class="_div data-v-6225bdcb boxinput"><input type="number" value="{{PHONE}}" bindinput="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_input data-v-6225bdcb" /></view>
+    <view class="_p data-v-6225bdcb">
+      <image src="/static/images/ID.png" alt="name" style="width: 2em" class="_img data-v-6225bdcb"></image> 身份证号
+    </view>
+    <view class="_div data-v-6225bdcb boxinput"><input type="idcard" value="{{CREADITCARD}}" bindinput="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_input data-v-6225bdcb" /></view>
+    <view class="_div data-v-6225bdcb login"><button bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}" class="_button data-v-6225bdcb">提 交</button></view>
+  </view>
+</template>

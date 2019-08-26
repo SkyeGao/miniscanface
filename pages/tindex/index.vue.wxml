@@ -1,0 +1,56 @@
+<template name="7f4bd0de">
+  <view class="_div data-v-07e7b4d2 wrapper">
+    <view class="_p data-v-07e7b4d2 text">{{title}}</view>
+    <view class="_div data-v-07e7b4d2 skye-grids">
+      <view class="_div data-v-07e7b4d2 left skye-grid" bindtap="handleProxy" wx:if="{{loccodeflag}}" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+        <view class="_div data-v-07e7b4d2 skye-grid-but">
+          <image src="/static/images/jrsq.png" alt="家人授权" class="_img data-v-07e7b4d2"></image>
+          <view class="_p data-v-07e7b4d2">家人授权</view>
+        </view>
+      </view>
+      <view class="_div data-v-07e7b4d2 left skye-grid" wx:if="{{!loccodeflag}}">
+        <view class="_div data-v-07e7b4d2 skye-grid-but">
+          <image src="/static/images/jrsq.png" alt="家人授权" class="_img data-v-07e7b4d2"></image>
+          <view class="_p data-v-07e7b4d2">家人授权</view>
+        </view>
+      </view>
+      <view class="_div data-v-07e7b4d2 left skye-grid" bindtap="handleProxy" wx:if="{{loccodeflag}}" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+        <view class="_div data-v-07e7b4d2 skye-grid-but">
+          <image src="/static/images/fksq.png" alt="访客授权" class="_img data-v-07e7b4d2"></image>
+          <view class="_p data-v-07e7b4d2">访客授权</view>
+        </view>
+      </view>
+      <view class="_div data-v-07e7b4d2 left skye-grid" wx:if="{{!loccodeflag}}">
+        <view class="_div data-v-07e7b4d2 skye-grid-but">
+          <image src="/static/images/fksq.png" alt="访客授权" class="_img data-v-07e7b4d2"></image>
+          <view class="_p data-v-07e7b4d2">访客授权</view>
+        </view>
+      </view>
+      <view class="_div data-v-07e7b4d2 left skye-grid" bindtap="handleProxy" wx:if="{{loccodeflag}}" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+        <view class="_div data-v-07e7b4d2 skye-grid-but">
+          <image src="/static/images/record.png" alt="进出记录" class="_img data-v-07e7b4d2"></image>
+          <view class="_p data-v-07e7b4d2">进出记录</view>
+        </view>
+      </view>
+      <view class="_div data-v-07e7b4d2 left skye-grid" wx:if="{{!loccodeflag}}">
+        <view class="_div data-v-07e7b4d2 skye-grid-but">
+          <image src="/static/images/record.png" alt="进出记录" class="_img data-v-07e7b4d2"></image>
+          <view class="_p data-v-07e7b4d2">进出记录</view>
+        </view>
+      </view>
+      <view class="_div data-v-07e7b4d2 left skye-grid" bindtap="handleProxy" wx:if="{{loccodeflag}}" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+        <view class="_div data-v-07e7b4d2 skye-grid-but">
+          <image src="/static/images/upload.png" alt="上传图片" class="_img data-v-07e7b4d2"></image>
+          <view class="_p data-v-07e7b4d2">上传照片</view>
+        </view>
+      </view>
+      <view class="_div data-v-07e7b4d2 left skye-grid" wx:if="{{!loccodeflag}}">
+        <view class="_div data-v-07e7b4d2 skye-grid-but">
+          <image src="/static/images/upload.png" alt="上传图片" class="_img data-v-07e7b4d2"></image>
+          <view class="_p data-v-07e7b4d2">上传照片</view>
+        </view>
+      </view>
+      <view class="_div data-v-07e7b4d2 clear"></view>
+    </view>
+  </view>
+</template>

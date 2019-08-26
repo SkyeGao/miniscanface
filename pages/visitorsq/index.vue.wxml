@@ -1,0 +1,26 @@
+<template name="5427c115">
+  <view class="_div data-v-0915d26e wrapper">
+    <view class="_div data-v-0915d26e header">授权列表</view>
+    <view class="_div data-v-0915d26e skye-cells">
+      <view class="_div data-v-0915d26e skye-cell-bd on">姓名</view>
+      <view class="_div data-v-0915d26e skye-cell-hd on textcenter">时间</view>
+      <view class="_div data-v-0915d26e skye-cell-ft on" style=" width:60px;text-align:right;">操作</view>
+    </view>
+    <view class="_div data-v-0915d26e sqlist" wx:key="index" key="{{index}}" wx:for="{{sqlist}}" wx:for-index="index" wx:for-item="item">
+      <view class="_div data-v-0915d26e skye-cells">
+        <view class="_div data-v-0915d26e skye-cell-bd">{{item.NAME}}</view>
+        <view class="_div data-v-0915d26e skye-cell-hd textcenter">
+          <picker mode="date" value="{{item.START_TIME}}" id="{{item.ID}}" start="1900-01-01" end="2100-01-01" bindchange="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" class="_picker data-v-0915d26e">
+            <view wx:if="{{item.START_TIME!=''}}" class="_div data-v-0915d26e">{{item.START_TIME}}</view>
+            <view wx:if="{{item.START_TIME==''}}" class="_div data-v-0915d26e">开始时间</view>
+          </picker> -- <picker mode="date" value="{{item.END_TIME}}" id="{{item.ID}}" start="1900-01-01" end="2100-01-01" bindchange="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" class="_picker data-v-0915d26e">
+            <view wx:if="{{item.END_TIME!=''}}" class="_div data-v-0915d26e">{{item.END_TIME}}</view>
+            <view wx:if="{{item.END_TIME==''}}" class="_div data-v-0915d26e">到期时间</view>
+          </picker>
+        </view>
+        <view class="_div data-v-0915d26e skye-cell-ft"><button size="mini" class="_button data-v-0915d26e yes" wx:if="{{item.STATUSID=='A05100_C_STATUS_0002'||item.STATUSID=='A05100_C_STATUS_0005'}}" bindtap="handleProxy" data-eventid="{{'2_'+index}}" data-comkey="{{$k}}">授权</button> <button size="mini" class="_button data-v-0915d26e no" wx:if="{{item.STATUSID=='A05100_C_STATUS_0004'}}" bindtap="handleProxy" data-eventid="{{'3_'+index}}" data-comkey="{{$k}}">取消</button> <text wx:if="{{item.STATUSID=='A05100_C_STATUS_0000'}}" class="_text data-v-0915d26e">未绑定</text> <text wx:if="{{item.STATUSID=='A05100_C_STATUS_0001'}}" class="_text data-v-0915d26e">已上传</text> <text wx:if="{{item.STATUSID=='A05100_C_STATUS_0003'}}" class="_text data-v-0915d26e">同步失败</text></view>
+      </view>
+    </view>
+    <view class="_div data-v-0915d26e invitebut" wx:if="{{sqflag}}" bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}"> 邀 请 </view>
+  </view>
+</template>

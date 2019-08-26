@@ -1,0 +1,33 @@
+
+.skye-cells.data-v-0915d26e {
+  width: 96%;
+  margin: 0 auto;
+}
+picker.data-v-0915d26e {
+  display: inline-block;
+}
+.sqlist.data-v-0915d26e {
+  width: 100%;
+}
+.yes.data-v-0915d26e {
+  background-color: #54a9de;
+  color: #fff;
+  vertical-align: middle;
+}
+.no.data-v-0915d26e {
+  background-color: #999999;
+  color: #fff;
+  vertical-align: middle;
+}
+.invitebut.data-v-0915d26e {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4em;
+  position: fixed;
+  bottom: 1em;
+  right: 0.5em;
+  color: #fff;
+  background-color: #54a9de;
+}

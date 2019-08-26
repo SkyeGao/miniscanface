@@ -1,0 +1,17 @@
+<template name="897f7596">
+  <view class="_div data-v-81a67514 wrapper">
+    <view class="_div data-v-81a67514 header">授权列表</view>
+    <view class="_div data-v-81a67514 sqlist" wx:key="index" key="{{index}}" wx:for="{{familylist}}" wx:for-index="index" wx:for-item="item">
+      <view class="_div data-v-81a67514 skye-flex">
+        <view class="_div data-v-81a67514 left skye-flex-col6">{{item.NAME}}</view>
+        <view class="_div data-v-81a67514 right skye-flex-col3" wx:if="{{item.STATUSID=='A05100_C_STATUS_0002'||item.STATUSID=='A05100_C_STATUS_0005'}}"><button size="mini" class="_button data-v-81a67514 yes" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}">授权</button></view>
+        <view class="_div data-v-81a67514 right skye-flex-col3" wx:if="{{item.STATUSID=='A05100_C_STATUS_0004'}}"><button size="mini" class="_button data-v-81a67514 no" bindtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}">取消</button></view>
+        <view class="_div data-v-81a67514 right skye-flex-col3" wx:if="{{item.STATUSID=='A05100_C_STATUS_0000'}}"> 未绑定 </view>
+        <view class="_div data-v-81a67514 right skye-flex-col3" wx:if="{{item.STATUSID=='A05100_C_STATUS_0001'}}"> 已上传 </view>
+        <view class="_div data-v-81a67514 right skye-flex-col3" wx:if="{{item.STATUSID=='A05100_C_STATUS_0003'}}"> 同步失败 </view>
+        <view class="_div data-v-81a67514 clear"></view>
+      </view>
+    </view>
+    <view class="_div data-v-81a67514 invitebut" wx:if="{{sqflag}}" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}"> 邀 请 </view>
+  </view>
+</template>

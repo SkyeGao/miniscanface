@@ -1,0 +1,11 @@
+<template name="5ba5f618">
+  <view class="_div data-v-19baa235 wrapper">
+    <view class="_p data-v-19baa235">
+      <image src="/static/images/upload-icon.png" alt="name" class="_img data-v-19baa235"></image> 请上传照片
+    </view>
+    <view class="_div data-v-19baa235 addimg">
+      <image src="{{img[0]}}" alt="addimg" mode="widthFix" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_img data-v-19baa235"></image>
+    </view>
+    <view class="_div data-v-19baa235 login"><button bindtap="handleProxy" hidden="{{!(isUpload)}}" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_button data-v-19baa235">上 传</button> <button class="_button data-v-19baa235 grey" hidden="{{!(!isUpload)}}">上 传</button></view>
+  </view>
+</template>

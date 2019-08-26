@@ -1,0 +1,9 @@
+<template name="0e9d309b">
+  <view class="_div data-v-595507f4 wrapper">
+    <view class="_div data-v-595507f4 inbox">
+      <image src="/static/images/logo.png" alt="logo" mode="widthFix" class="_img data-v-595507f4"></image>
+    </view>
+    <view class="_p data-v-595507f4">智能识别系统</view>
+    <view class="_div data-v-595507f4 login"><button open-type="getUserInfo" bindgetuserinfo="handleProxy" wx:if="{{loccode!=''}}" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_button data-v-595507f4">微 信 登 录</button> <button wx:if="{{loccode==''}}" class="_button data-v-595507f4">请 用 微 信 扫 一 扫 进 入</button></view>
+  </view>
+</template>

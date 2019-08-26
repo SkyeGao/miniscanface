@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/main",
+    "pages/login/main",
+    "pages/tindex/main",
+    "pages/mine/main",
+    "pages/upload/main",
+    "pages/familysq/main",
+    "pages/visitorsq/main",
+    "pages/sharepage/main",
+    "pages/jcrecord/main",
+    "pages/visitordetail/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "智能识别系统",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#77c1f5",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/tindex/main",
+        "text": "首页",
+        "iconPath": "/static/tabs/home.png",
+        "selectedIconPath": "/static/tabs/home-active.png"
+      },
+      {
+        "pagePath": "pages/mine/main",
+        "text": "我的",
+        "iconPath": "/static/tabs/me.png",
+        "selectedIconPath": "/static/tabs/me-active.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "允许小程序访问您的位置"
+    }
+  },
+  "sitemapLocation": "sitemap79.json"
+}

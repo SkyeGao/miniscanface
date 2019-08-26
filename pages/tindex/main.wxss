@@ -1,0 +1,36 @@
+
+.skye-grids.data-v-07e7b4d2 {
+  width: 100%;
+  position: relative;
+}
+.skye-grid.data-v-07e7b4d2 {
+  width: 50%;
+  padding-top: 10%;
+}
+.skye-grid-but.data-v-07e7b4d2 {
+  width: 80%;
+  background-color: #0085FE;
+  margin: 0 10%;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+}
+.skye-grid-but ._img.data-v-07e7b4d2 {
+  width: 3em;
+  height: 3em;
+  padding: 15% 0;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.skye-grid-but ._p.data-v-07e7b4d2 {
+  text-align: center;
+  color: #fff;
+  padding-bottom: 1em;
+}
+.text.data-v-07e7b4d2 {
+  text-align: center;
+  width: 100%;
+  padding-top: 1em;
+  font-size: 1.1em;
+}

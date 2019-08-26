@@ -1,0 +1,8 @@
+<template name="15d24206">
+  <view class="_div data-v-60a43c47 wrapper">
+    <view class="_div data-v-60a43c47 txbox">
+      <image src="{{wxuser.avatarUrl}}" alt="tx" class="_img data-v-60a43c47"></image>
+      <view class="_p data-v-60a43c47">{{wxuser.nickName}}</view>
+    </view>
+  </view>
+</template>

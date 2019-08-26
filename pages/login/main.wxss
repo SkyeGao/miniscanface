@@ -1,0 +1,54 @@
+
+.boxinput {
+  width: 90%;
+  border-bottom: 2rpx solid #c9c9c9;
+  margin: 0 auto;
+  height: 2.5em;
+}
+.boxinput ._input {
+  width: 100%;
+  overflow: hidden;
+  line-height: 2.5em;
+  font-size: 1em;
+  color: #000;
+  height: 2.5em;
+}
+.login ._button {
+  width: 90%;
+  background-color: #54a9de;
+  line-height: 3em;
+  font-size: 1em;
+  text-align: center;
+  border-radius: 0.5em;
+  color: #fff;
+  position: fixed;
+  bottom: 5%;
+  left: 5%;
+}
+._p {
+  padding: 10% 5% 2% 5%;
+}
+._p ._img {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  padding-right: 3%;
+  vertical-align: middle;
+}
+.scrollview {
+  width: 90%;
+  margin: 0 auto;
+  border: 1rpx solid #d9d9d9;
+  border-top: none;
+  position: relative;
+  z-index: 10;
+  background-color: #fff;
+}
+.itemview {
+  line-height: 80rpx;
+  padding-left: 20rpx;
+  border-bottom: 1rpx solid #d9d9d9;
+}
+.itemhover {
+  background-color: #c9c9c9;
+}

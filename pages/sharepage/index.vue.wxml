@@ -1,0 +1,29 @@
+<template name="4dee2b92">
+  <view class="_div data-v-e41208e0 wrapper">
+    <view class="_div data-v-e41208e0 erwimg" wx:if="{{ctimeflag}}">
+      <image src="{{imgurl}}" alt="erw" mode="widthFix" class="_img data-v-e41208e0"></image>
+    </view>
+    <view class="_div data-v-e41208e0 timebox" wx:if="{{!ctimeflag}}">
+      <view class="_div data-v-e41208e0 skye-cells">
+        <view class="_div data-v-e41208e0 skye-cell-bd">开始时间：</view>
+        <view class="_div data-v-e41208e0 skye-cell-hd">
+          <picker mode="date" value="{{START_TIME}}" start="1900-01-01" end="2100-01-01" bindchange="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_picker data-v-e41208e0">
+            <view class="_div data-v-e41208e0">{{START_TIME}}</view>
+          </picker>
+        </view>
+      </view>
+      <view class="_div data-v-e41208e0 skye-cells">
+        <view class="_div data-v-e41208e0 skye-cell-bd">到期时间：</view>
+        <view class="_div data-v-e41208e0 skye-cell-hd">
+          <picker mode="date" value="{{END_TIME}}" start="1900-01-01" end="2100-01-01" bindchange="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_picker data-v-e41208e0">
+            <view class="_div data-v-e41208e0">{{END_TIME}}</view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-e41208e0 login" wx:if="{{!ctimeflag}}"><button bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_button data-v-e41208e0">确 定 时 间</button></view>
+    <view class="_div data-v-e41208e0 share" wx:if="{{ctimeflag}}"><button bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_button data-v-e41208e0">保存二维码</button> <button open-type="share" class="_button data-v-e41208e0">分 享</button>
+      <view class="_div data-v-e41208e0 clear"></view>
+    </view>
+  </view>
+</template>

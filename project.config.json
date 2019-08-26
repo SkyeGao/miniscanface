@@ -1,0 +1,104 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"checkInvalidKey": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.7.1",
+	"appid": "wxadfc7be59c78d5fe",
+	"projectname": "mini_scanface",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 7,
+			"list": [
+				{
+					"id": -1,
+					"name": "jiaren",
+					"pathName": "pages/familysq/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "share",
+					"pathName": "pages/sharepage/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "record",
+					"pathName": "pages/jcrecord/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "visitor",
+					"pathName": "pages/visitorsq/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "vdetail",
+					"pathName": "pages/visitordetail/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "login",
+					"pathName": "pages/login/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "upload",
+					"pathName": "pages/upload/main",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

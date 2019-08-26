@@ -1,0 +1,13 @@
+<template name="d3e3b586">
+  <view class="_div data-v-cc0ab504 wrapper">
+    <view class="_div data-v-cc0ab504 header">进出列表</view>
+    <block wx:key="index" key="{{index}}" wx:for="{{recordlist}}" wx:for-index="index" wx:for-item="item">
+      <view class="_div data-v-cc0ab504 skye-flex" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}">
+        <view class="_div data-v-cc0ab504 left skye-flex-col4">{{item.TIME}}</view>
+        <view class="_div data-v-cc0ab504 left skye-flex-col5 textcenter">{{item.POSITION}}</view>
+        <view class="_div data-v-cc0ab504 left skye-flex-col3">{{item.NAME}}</view>
+        <view class="_div data-v-cc0ab504 clear"></view>
+      </view>
+    </block>
+  </view>
+</template>

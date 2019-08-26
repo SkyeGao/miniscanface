@@ -1,0 +1,1 @@
+<import src="/pages/jcrecord/index.vue.wxml" /><template is="d3e3b586" data="{{ ...$root['0'], $root }}"/>

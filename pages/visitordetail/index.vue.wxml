@@ -1,0 +1,24 @@
+<template name="346abac8">
+  <view class="_div data-v-79e20621 wrapper">
+    <view hidden="{{!(!isDone && userid=='')}}" class="_p data-v-79e20621">
+      <image src="/static/images/user.png" alt="name" class="_img data-v-79e20621"></image> 姓名
+    </view>
+    <view class="_div data-v-79e20621 boxinput" hidden="{{!(!isDone && userid=='')}}"><input type="text" value="{{NAME}}" bindinput="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_input data-v-79e20621" /></view>
+    <view hidden="{{!(!isDone && userid=='')}}" class="_p data-v-79e20621">
+      <image src="/static/images/mobile.png" alt="name" class="_img data-v-79e20621"></image> 手机号
+    </view>
+    <view class="_div data-v-79e20621 boxinput" hidden="{{!(!isDone && userid=='')}}"><input type="number" value="{{PHONE}}" bindinput="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_input data-v-79e20621" /></view>
+    <view hidden="{{!(isDone || userid!='')}}" class="_div data-v-79e20621">
+      <view class="_p data-v-79e20621">
+        <image src="/static/images/upload-icon.png" alt="name" class="_img data-v-79e20621"></image> 请上传照片
+      </view>
+      <view class="_div data-v-79e20621 addimg">
+        <image src="{{img}}" alt="addimg" mode="widthFix" bindtap="handleProxy" wx:if="{{!fkuploadflag}}" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_img data-v-79e20621"></image>
+        <image src="{{img}}" alt="addimg" mode="widthFix" wx:if="{{fkuploadflag}}" class="_img data-v-79e20621"></image>
+      </view>
+    </view>
+    <view class="_div data-v-79e20621 login" hidden="{{!(isDone || userid!='')}}"><button bindtap="handleProxy" hidden="{{!(isUpload)}}" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_button data-v-79e20621">上 传</button> <button class="_button data-v-79e20621 grey" hidden="{{!(!isUpload)}}">上 传</button></view>
+    <view class="_div data-v-79e20621 login" hidden="{{!(!isDone && userid=='')}}"><button open-type="getUserInfo" bindgetuserinfo="handleProxy" wx:if="{{NAME!=''&& PHONE!=''&&typeid=='01'}}" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_button data-v-79e20621">保 存</button> <button bindtap="handleProxy" wx:if="{{NAME!=''&& PHONE!=''&&typeid=='02'}}" data-eventid="{{'5'}}" data-comkey="{{$k}}" class="_button data-v-79e20621">保 存</button> <button class="_button data-v-79e20621 grey" wx:if="{{NAME==''|| PHONE==''||typeid==undefined}}">保 存</button></view>
+    <view class="_div data-v-79e20621 tip" hidden="{{!(!validateflag)}}">{{validateValue}}</view>
+  </view>
+</template>

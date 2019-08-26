@@ -1,0 +1,37 @@
+
+.addimg.data-v-81a67514 {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 10%;
+}
+.addimg ._img.data-v-81a67514 {
+  width: 100%;
+}
+.sqlist.data-v-81a67514 {
+  width: 100%;
+}
+.skye-flex.data-v-81a67514 {
+  padding-top: 5%;
+}
+.yes.data-v-81a67514 {
+  background-color: #54a9de;
+  color: #fff;
+  vertical-align: middle;
+}
+.no.data-v-81a67514 {
+  background-color: #999999;
+  color: #fff;
+  vertical-align: middle;
+}
+.invitebut.data-v-81a67514 {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4em;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  color: #fff;
+  background-color: #54a9de;
+}
